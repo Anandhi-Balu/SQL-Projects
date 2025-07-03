@@ -9,4 +9,4 @@ Performed in-depth analysis of Blinkit's sales data to uncover key business insi
 * **Sales Performance**: Analyzed how fat content, item types, and outlet characteristics (location, age, and size) impact total sales. 
 * **Comprehensive Metrics**: Delivered a comprehensive breakdown of key metrics (sales volume, average revenue, average customer rating) segmented by outlet type.
 
-For a detailed project overview, i.e., queries and results, refer to the overview_blinkit_analysis file.
+For a detailed project overview, i.e., queries and results, refer to [overview_blinkit_analysis](https://github.com/Anandhi-Balu/SQL-Projects/blob/main/Blinkit%20Sales%20Analysis/overview_blinkit_analysis.pdf).
