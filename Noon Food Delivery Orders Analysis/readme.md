@@ -64,6 +64,8 @@ HAVING COUNT(*)>1 AND COUNT(*)=COUNT(Promo_code_Name);
 WITH CTE AS (SELECT Customer_code, Promo_code_Name, 
     row_number() over(partition by Customer_code order by Placed_at) AS rn FROM orders
 	WHERE MONTH(Placed_at)=1)
+SELECT COUNT(CASE WHEN rn=1 AND Promo_code_Name IS NULL THEN Customer_code END)*100/COUNT(distinct Customer_code) AS organic_customers
+FROM CTE;
 ```
 SELECT COUNT(CASE WHEN rn=1 AND Promo_code_Name IS NULL THEN Customer_code END)*100/COUNT(distinct Customer_code) AS organic_customers
 FROM CTE;
