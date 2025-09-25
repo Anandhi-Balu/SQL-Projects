@@ -67,5 +67,3 @@ WITH CTE AS (SELECT Customer_code, Promo_code_Name,
 SELECT COUNT(CASE WHEN rn=1 AND Promo_code_Name IS NULL THEN Customer_code END)*100/COUNT(distinct Customer_code) AS organic_customers
 FROM CTE;
 ```
-SELECT COUNT(CASE WHEN rn=1 AND Promo_code_Name IS NULL THEN Customer_code END)*100/COUNT(distinct Customer_code) AS organic_customers
-FROM CTE;
